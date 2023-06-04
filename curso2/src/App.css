@@ -1,0 +1,8 @@
+.img{
+  width: 200px; 
+}
+
+/* user-select: es para que cuando se le haga doble click a un elemento no se seleccione */
+.caja{
+  user-select:none;
+}

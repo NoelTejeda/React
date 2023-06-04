@@ -1,0 +1,79 @@
+
+Integración de formulario con FORMIK, YUP, SEMANTIC UI
+
+
+FORMIK: para el manejo de datos de formularios
+YUP: para validar el formulario.
+SEMANTIC: para crear el formulario.
+
+
+PRIMER PASO: Instalar en el proyecto lo siguiente.
+Instalar formik
+Instalar yup
+Instalar semantic
+
+
+
+1) Instalar semantic:
+
+https://react.semantic-ui.com/usage
+
+yarn add semantic-ui-react semantic-ui-css
+## Or NPM
+npm install semantic-ui-react semantic-ui-css
+
+
+con esto ya se tienen las dos instalaciones que depende semantic.
+semantic-ui-react
+semantic-ui-css
+
+lo que falta es hacer la importacion del css al proyecto(index.js):
+import 'semantic-ui-css/semantic.min.css'
+
+y el index.css lo colocamos debajo de la importación de semantic.
+
+
+
+2) Instalar formik:
+
+https://yarnpkg.com/package/formik
+puede ser de npm o yarn.
+
+npm i formik
+yarn add formik
+
+
+
+
+3) instalar yup:
+
+npm i yup
+yarn add yup
+
+
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+
+en package.json tengo el siguinte error: 
+respuesta del error: /json.schemastore.org/package': getaddrinfo EAI_AGAIN json.schemastore.org.
+
+ https://stackoverflow.com/questions/34921875/unable-to-get-local-issuer-certificate-vscode
+ 
+
+ https://www.codeprj.com/blog/cc49431.html
+
+
+ https://stackoverflow.com/questions/49056000/all-of-my-json-files-have-problems-loading-reference-schema-from-schemastore-az
+
+
+ Resumen: error al descargar por los proxys del trabajo.
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+ https://www.youtube.com/watch?v=_zq65FQnkaU&list=TLPQMDQwODIwMjKK8eYvePIb1Q&index=6
+
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+
+para resolver problemas de vulnerabilidad cuando se instala formik o cualquier archivo el comando esa:
+npm audit fix
+

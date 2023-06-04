@@ -1,0 +1,26 @@
+.rey{
+  /*color es para las letras*/
+  color:rgb(252, 252, 252);
+  /*padding arriba, derecha-izquierda, abajo*/
+  padding: 2px 15px 20px;
+  /*margin-bottom para la separación desde abajo*/
+  margin-bottom: 10px;
+  /*el ancho dependerá de cuantas columnas quiero que se vea y las que no quepan con flex-wrap las pasa a la siguiente fila*/
+  width: 16%;
+  box-sizing: border-box;
+}
+
+img{
+  /*para que las imagenes se adapten al ancho de la caja */
+  width: 100%;
+}
+
+.cajacentral{
+/*display: flex para que se coloquen en una misma fila */
+display: flex;
+/*justify-content para que deje un espacio en el medio */
+justify-content: space-evenly;
+/*flex-wrap es para indicar si no cabe en una fila ordene en la siguiente */
+flex-wrap: wrap;
+
+}
