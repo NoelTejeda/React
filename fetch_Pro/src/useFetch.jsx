@@ -10,18 +10,20 @@ import { useState, useEffect } from "react";
 export function useFetch(url){
 const [data, setData] = useState(null)
 const [loading, setLoading] = useState(true)
+const [error, setError] = useState(null)
 
 useEffect(() => {
   setLoading(true)
   fetch(url) 
   .then((Response)=>Response.json())
   .then((data)=>setData(data))
+  .catch((error)=> setError(error))
   .finally(()=>setLoading(false))
 
 },[])
 /* se coloca un corchete vacio para indicar que se renderize una vez, pero tomar en cuenta que se puede transformar a un array de dependencias*/
 
-return {data, loading};
+return {data, loading, error};
 }
 
 

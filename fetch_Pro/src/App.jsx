@@ -3,7 +3,7 @@ import { useFetch } from "./useFetch";
 import PropagateLoader from "react-spinners/PropagateLoader";
 
 function App() {
-  const { data, loading } = useFetch(
+  const { data, loading, error } = useFetch(
     "https://jsonplaceholder.typicode.com/users"
   )
 /*   const override para agregarle bordes, pero antes tomar en cuenta que no todos los spinners tienen bordes por ejemplo PopagateLoader 
@@ -18,6 +18,7 @@ function App() {
       <h1>Fetch Like a Pro</h1>
       <div className="card">
         <ul>
+          {error && <li>Error: {error}</li>}
           {/* evaluea a true primeramente, sino hay nada, no muestra nada */}
           {/* {loading && <li>loading...</li> } */}
           {loading && (
