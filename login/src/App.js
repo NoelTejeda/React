@@ -53,7 +53,7 @@ function App() {
           onChange={formik.handleChange} 
           error = {formik.errors.name  }
           />
-        <Form.Input type="text" 
+        <Form.Input type="password" 
           placeholder="Contraseña" 
           name="password" 
           onChange={formik.handleChange} 
