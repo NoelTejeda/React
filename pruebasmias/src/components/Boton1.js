@@ -1,7 +1,5 @@
-import React from 'react';
+const Boton2 = (z) => {
 
-const boton2 = (z) => {
- 
   return (
     <div>
       <button>{z.mensaje1} </button>
@@ -9,4 +7,4 @@ const boton2 = (z) => {
   );
 }
 
-export default boton2;
+export default Boton2

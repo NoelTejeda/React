@@ -1,9 +1,8 @@
-import React from 'react';
-
-const comentario = ({sujeto}) => {
+const comentario = ({ sujeto }) => {
   return (
     <div>
       <p >{sujeto.nombre} </p>
+      <p >{sujeto.apellido} </p>
     </div>
   );
 }
