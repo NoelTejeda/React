@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.css"
 import MiComponente from "./Component/MiComponente"
 
 function App() {
@@ -6,20 +6,26 @@ function App() {
     <>
       <h1>Hola Mundo</h1>
       {/* en caso de enviar un objeto al componente hijo se realiza de la siguinte  */}
-      <MiComponente rey={{nombre:"Noel",
-                          come:" pepito"}}/>
-  
-      <MiComponente rey={{nombre:"Marianyela",
-                          come:" zanahorias"}}/>
-                          
-      <MiComponente rey={{nombre:"Anyela",
-                          come:" Cambur"}}/>
+      <MiComponente rey={{
+        nombre: "Noel",
+        come: " pepito"
+      }} />
 
-                          <h3>
-                            
-                            </h1> 
+      <MiComponente rey={{
+        nombre: "Marianyela",
+        come: " zanahorias"
+      }} />
+
+      <MiComponente rey={{
+        nombre: "Anyela",
+        come: " Cambur"
+      }} />
+
+      <h3>
+
+      </h3>
     </>
-  );
+  )
 }
 
 export default App;
